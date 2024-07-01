@@ -104,13 +104,107 @@
 # 21: Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.
 # N/A
 
-# 22: Crie um programa que leia o nome completo de uma pessoa e mostre:
+# 22: Crie um programa que leia o nome completo de uma pessoa e mostre:0
 # – O nome com todas as letras maiúsculas e minúsculas.
 # – Quantas letras ao todo (sem considerar espaços).
 # – Quantas letras tem o primeiro nome.
 
-nome = 'Carlos Oliveira'
+# nome = 'Carlos Oliveira'
 
-print(nome)
-print(len(nome))
-print(len(nome: 6))
+# print(nome)
+# print(len(nome))
+# print(len(nome: 6))
+
+
+#28: Escreva um programa que faça o computador “pensar” em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador. 
+#O programa deverá escrever na tela se o usuário venceu ou perdeu.
+# import random
+# from time import sleep
+
+# pc = random.randrange(0,5)
+# user = int(input('Qual o número escolhido pelo pc? '))
+
+# print ("PROCESSANDO...")
+# sleep(2)
+# if pc == user :
+#     print(f'O número escolhido foi {pc}, você acertou!!!')
+# else:
+#     print(f'O número escolhido foi {pc}, você errou =(')
+
+#29: Escreva um programa que leia a velocidade de um carro. Se ele ultrapassar 80Km/h, mostre uma mensagem dizendo que ele foi multado. 
+    #A multa vai custar R$7,00 por cada Km acima do limite.
+
+# velo = int(input('Em qual velocidade você passou no radar? '))
+# velo_max = 80
+# multa = ((velo - velo_max)*7)
+
+# if velo>velo_max:
+#     print(f'Você ultrapassou o limite de velocidade em {velo-velo_max}Km/h, sua multa será de {multa}R$')
+# else:
+#     print(f'Você passou a {velo}Km/h o limite é {velo_max}Km/h, parabéns!')
+
+#30: Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR.
+
+# num = int(input('Digite um número: '))
+# par= (num%2==0)
+
+# if par == True:
+#     print('Seu número é par')
+# else:
+#     print('Seu número é impar')
+
+##31: Desenvolva um programa que pergunte a distância de uma viagem em Km. Calcule o preço da passagem, cobrando R$0,50 por Km para viagens de até 200Km 
+#e R$0,45 parta viagens mais longas.
+
+# km = float(input('Qual a distância em km da viagem? '))
+
+# if km <= 200:
+#     print(f'O custo por km é de 0,50R$, sua viagem tem {km}km logo seu custo será de R${km*0.50}')
+# else:
+#      print(f'O custo por km é de 0,45R$, sua viagem tem {km}km logo seu custo será de R${km*0.45}')
+
+#32: Faça um programa que leia um ano qualquer e mostre se ele é bissexto.
+# import calendar
+
+# ano= int(input('Digite um ano: '))
+
+# if calendar.isleap(ano) == True:
+#     print ("Bissexto")
+# else:
+#     print('Normal')
+
+#33: Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
+
+# num1 = 13
+# num2 = 5
+# num3 = 6
+
+# lista = [num1 , num2, num3]
+
+# print(f'Seu maior número é {max(lista)}, e o menor é {min(lista)}')
+
+
+#34: Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento. 
+#Para salários superiores a R$1250,00, calcule um aumento de 10%. Para os inferiores ou iguais, o aumento é de 15%
+
+# salario = float(input('Digite seu salário: '))
+# bonus1 = 0.1
+# bonus2 = 0.15
+
+# if salario> 1250:
+#     print(f'Seu salário era de R${salario} você recebeu um aumento de 10% e agora receberá R${(salario*bonus1)+salario}')
+# else:
+#     print(f'Seu salário era de R${salario} você recebeu um aumento de 15% e agora receberá R${(salario*bonus1)+salario}')
+
+# r1 = 5
+# r2 = 10
+# r3 = 16
+
+# condicao = ((r1 + r2) < r3 or
+# (r2 + r3) < r1 or
+# (r3+r1) < r2)
+
+# if condicao == True:
+#     print('Pode ser formado um triângulo')
+# else:
+#     print('Não pode ser formado um triângulo')
